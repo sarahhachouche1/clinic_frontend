@@ -6,8 +6,8 @@ export const Header = () => {
 
   return (
     <header>
-      <img src={logo} alt="logo" className="logo"/>
-    
+      <img src={logo} alt="logo" className="logoheader"/>
+      <hr1 />
       <ul>
         <li>
           <a href="/">Home</a>
@@ -26,6 +26,8 @@ export const Header = () => {
         </li>
         <li><button className="button">Appointment</button></li>
       </ul>
+   
     </header>
+    
   );
 };

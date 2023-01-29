@@ -26,17 +26,32 @@ header a {
   padding: 16px 28px;
 }
 
-header a,
+header li,
 a:visited,
 a:hover {
-  color: inherit;
+  color: blue;
 }
 
 header a:active{
-  color:blue
-}
+  background-color: #3b728a;}
 
-.logo {
+.logoheader {
   width: 150px;
   position: relative;
+}
+header li:hover{
+  background-color:rgb(197, 214, 214);
+  height: 30px;
+
+
+  }
+
+  hr1 {
+    border-top: 1px solid rgb(0, 0, 0);
+    width: 1700px; /* set the height */
+    position: absolute; /* position the line */
+    left: 110px;
+    right:110px;
+    top:110px; /* set the left position */
+ /* move the line to the left */
 }
