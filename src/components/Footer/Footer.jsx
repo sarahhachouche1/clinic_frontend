@@ -10,8 +10,7 @@ export const Footer = () => {
       <img src={logo} alt="logo" className="logofooter" />
       <div className="footer-bar-sec1">
         <strong>Dental solution </strong>is a well-known name in Facebook Career
-        dental and oral care in Beirut . Twitter Support The journey of this
-        institution Instagram Privacy policy started in 1990 <hr />.
+        dental and oral care in Beirut .<hr />
       </div>
 
       <div className="footer-bar-sec2">
