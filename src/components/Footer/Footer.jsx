@@ -2,14 +2,16 @@ import React from "react";
 import "../../styles/Footer.css";
 import logo from "../../images/logo.png";
 
+
 export const Footer = () => {
   return (
+   
     <footer>
       <img src={logo} alt="logo" className="logofooter" />
       <div className="footer-bar-sec1">
-        <strong>Dental solution </strong>is a well-known name inFacebookCareer
-        dental and oral care in Beirut.TwitterSupport The journey of this
-        institutionInstagramPrivacy policy started in 1990 <hr />.
+        <strong>Dental solution </strong>is a well-known name in Facebook Career
+        dental and oral care in Beirut . Twitter Support The journey of this
+        institution Instagram Privacy policy started in 1990 <hr />.
       </div>
 
       <div className="footer-bar-sec2">
@@ -37,13 +39,17 @@ export const Footer = () => {
           <iframe
             title="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26496.124608916696!2d35.48677272141671!3d33.88925268661702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f17215880a78f%3A0x729182bae99836b4!2sBeirut!5e0!3m2!1sen!2slb!4v1674946163797!5m2!1sen!2slb"
-            width="600"
+            width="580"
             height="230"
             style={{ border: "0" }}
             allowfullscreen=""
             loading="lazy"
           ></iframe>
           </div>
+
+      </div>
+      <div>
+        
       </div>
     </footer>
   );
