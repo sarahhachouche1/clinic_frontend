@@ -6,9 +6,9 @@ export const Home = () => {
   return <div className="home-page">
     <section className="home-first">
       <div>
-      <h1>We Provide High<br/>Quality<span className="yellow"> Dental</span> Services</h1>
-        <br/><p> Appropriately embrace transparent materials via turnkey niche markets.</p>
-        <section>
+      <h1 className="bigger-text">We Provide High<br/>Quality<span className="yellow"> Dental</span> Services</h1>
+        <br/><p className="gray"> Appropriately embrace transparent materials via<br/> turnkey niche markets.</p>
+        <section className="two-buttons">
       <div>
         <button className="primary-button">Get Started</button>
       </div>
@@ -17,7 +17,7 @@ export const Home = () => {
       </div>
         </section>
       </div>
-      <div>
+      <div className="think">
         <img src={thinkdr} alt="thinkdr" className="thinkdr"/>
       </div>
     </section>
