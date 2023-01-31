@@ -1,3 +1,6 @@
-/* #h{
-    margin-top: 120px;
-} */
+.home-first{
+    display: flex;
+    justify-content: space-between;
+
+}
+

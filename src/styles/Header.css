@@ -26,14 +26,19 @@ header a {
   padding: 16px 28px;
 }
 
-header a,
+header 
 a:visited,
-a:hover {
+a:active  {
   color: inherit;
 }
 
-header a:active{
-  color:blue
+a:visited.current {
+  color: aquamarine;
+}
+
+
+header a:hover{
+  color: gray
 }
 
 .logo {
