@@ -1,0 +1,83 @@
+.about-page{
+    border:1px solid black;
+    width: 20px;
+    height:20px;
+}
+
+
+.DentistryY {
+    color: yellow;
+}
+
+.H1Y {
+position: absolute;
+width: 599px;
+height: 139px;
+left: 101px;
+top: 277px;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 56px;
+line-height: 74px;
+}
+
+
+.PY {
+position: absolute;
+width: 575px;
+height: 121px;
+left: 102px;
+top: 439px;
+
+
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+}
+
+@media  (min-width: 1024px) {
+    .imgY {
+          position: absolute;
+          width: 680.84px;
+          height: 298.76px;
+          right: 204.88px;
+          top: 400.58px; 
+      }
+}
+
+
+@media  (min-width: 1024px) {
+
+.imgRy {
+    
+    position: absolute;
+    width: 335px;
+    height: 319px;
+    right: 34px;
+    top: 146px;
+
+}
+}
+
+@media  (min-width: 1024px) {
+
+.pBY {
+    display: flex;
+    position: absolute;
+    justify-content: flex-end;
+    align-content: center;
+    /* border: 1px red solid; */
+    padding-top: 20%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    /* line-height: 74px; */
+    /* text-align: right; */
+    
+    }
+}
