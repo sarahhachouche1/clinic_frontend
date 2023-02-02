@@ -1,51 +1,48 @@
-.about-page{
-    border:1px solid black;
-    width: 20px;
-    height:20px;
+.about-page {
+                border:1px solid black;
+                width: 20px;
+                height:20px;
 }
-
 
 .DentistryY {
-    color: yellow;
-}
-
-.H1Y {
-position: absolute;
-width: 599px;
-height: 139px;
-left: 101px;
-top: 277px;
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 56px;
-line-height: 74px;
+                color: #fedc2a;
 }
 
 
-.PY {
-position: absolute;
-width: 575px;
-height: 121px;
-left: 102px;
-top: 439px;
-
-
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
+@media (min-width : 1024px) {
+.H1YY  {
+         position: absolute;
+         font-family: 'Inter'; 
+         font-style: normal; 
+         font-weight: 700; 
+         font-size: 90px; 
+         padding-top: 4%;
+         padding-left: 11%;
+} 
 }
+
+@media (min-width : 1024px) {
+
+    .PY {
+          position: absolute;
+          width: 450px;
+          height: 121px;
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 22px;
+          line-height: 24px;
+          padding-top: 18%;
+          padding-left: 11%;
+}}
 
 @media  (min-width: 1024px) {
     .imgY {
-          position: absolute;
-          width: 680.84px;
-          height: 298.76px;
-          right: 204.88px;
-          top: 400.58px; 
+            position: absolute;
+            width: 680.84px;
+            height: 298.76px;
+            right: 204.88px;
+            top: 400.58px; 
       }
 }
 
@@ -54,30 +51,169 @@ line-height: 24px;
 
 .imgRy {
     
-    position: absolute;
-    width: 335px;
-    height: 319px;
-    right: 34px;
-    top: 146px;
+         position: absolute;
+         width: 335px;
+         height: 319px;
+         right: 34px;
+         top: 146px;
 
 }
 }
 
 @media  (min-width: 1024px) {
 
-.pBY {
+    .pBY {
+            padding-top: 29.8%;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 56px;
+            padding-left: 44.5%;
+            
+         }
+}
+
+
+.DoctorY {
+    color: #fedc2a;
+}
+
+@media  (min-width: 1024px) {
+.Drmahdi {
+            width: 195px;
+            height: 219px;
+            left: 230px;
+            top: 926px;
+    
+}
+}
+
+@media  (min-width: 1024px) {
+.Drusef {
+          width: 195px;
+          height: 219px;
+          left: 517px;
+          top: 926px;
+
+}
+}
+
+@media  (min-width: 1024px) {
+.Drsarah {
+
+            width: 100%;
+            height: 219px;
+            left: 805px;
+            top: 926px;
+}
+}
+
+
+
+.Drfatimaa {
+
+    padding-left: 20%;
+
+}
+  
+
+.imagesY {
     display: flex;
-    position: absolute;
-    justify-content: flex-end;
-    align-content: center;
-    /* border: 1px red solid; */
-    padding-top: 20%;
+    justify-content: space-around;
+    
+}
+
+
+.buttonA {
+    display: flex;
+    background-image: white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #516EFF;
+    font-size: 16px;
+    padding: 16px 28px;
+    border: solid 1px;
+    cursor: pointer;
+    margin: auto;
+}
+
+
+
+
+.ButtonAY {
+    padding-right: 100%;
+    height: 100vh;
+    width: 100vh;
+}
+
+
+.pdrname {
+            width: 248px;
+            height: 34px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 34px;
+            text-align: center;
+}
+
+.Harvard {
+    text-align: center;
+    width: 248px;
+    height: 24px;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    /* line-height: 74px; */
-    /* text-align: right; */
-    
-    }
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #777777;
 }
+
+.center_text{
+              text-align: center;
+}
+
+.Seemore {
+    background-color: #1E96C8;
+    color: white;
+    cursor: pointer;
+    width: 163px;
+    height: 56px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    transition: 0.2s;
+    top: 80%;
+}
+.Seemore:hover{
+    background-color: rgb(251, 242, 139);
+    color: black;
+    border: #fedc2a solid 2px;
+    scale: 1.050;
+    font-size: 19px;
+}
+
+.Seemoree {
+    transition: 0.3s;
+}
+.Seemoree:hover {
+    color: black;
+    background-color: rgb(251, 242, 139);
+    border: #fedc2a solid 2px;
+    scale: 1.050;
+}
+
+@media  (min-width: 1024px) {
+
+.sida {
+    position: absolute;
+    padding-top: 27.5%; 
+    margin-left: 15%;
+}
+}
+
+
