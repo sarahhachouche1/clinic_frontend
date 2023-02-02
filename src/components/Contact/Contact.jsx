@@ -6,14 +6,18 @@ import contactus from "../../images/contactus.jpg";
 import chatus from "../../images/chatus.png";
 import callus from "../../images/callus.png";
 import visitus from "../../images/visitus.png";
+import { Whatsup }from "../whatsapp/whatsapp";
 
 export const Contact = () => {
   return (
+
     (<Header />),
     (<Footer />),
+   
     (
       <section className="contactus-sec1">
-        <div className="middlenav">
+        <div className="middlenav">     
+       <Whatsup />,
           <img src={contactus} alt="contactus" className="contactuspng"></img>
         </div>
         <div className="rightnav">
