@@ -6,26 +6,28 @@ export const Header = () => {
   const path = window.location.pathname;
   return (
     <header>
-      <img src={logo} alt="logo" className="logo"/>
-    
+      <a href="/"><img src={logo} alt="logo" className="logoheader"/></a>
+      <hr1/>
       <ul>
-        <li>
+      <li className="animate">
           <a href="/" className={path === '/' ? "current" : ""}>Home</a>
         </li>
-        <li>
+        <li className="animate">
           <a href="/about" className={path === '/about' ? "current" : ""}>About</a>
         </li>
-        <li>
+        <li className="animate">
           <a href="/services" className={path === '/services' ? "current" : ""}>Services</a>
         </li>
-        <li>
+        <li className="animate">
           <a href="/reviews" className={path === '/reviews' ? "current" : ""}>Reviews</a>
         </li>
-        <li>
+        <li className="animate">
           <a href="/contact" className={path === '/contact' ? "current" : ""}>Contact</a>
         </li>
-        <li><button className="primary-button">Appointment</button></li>
+        <li className="left"><button className="primary-button">Appointment</button></li>
       </ul>
+
     </header>
+    
   );
 };
