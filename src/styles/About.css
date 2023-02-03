@@ -17,7 +17,7 @@
          font-weight: 700; 
          font-size: 90px; 
          padding-top: 4%;
-         padding-left: 11%;
+         padding-left: 8%;
 } 
 }
 
@@ -33,7 +33,7 @@
           font-size: 22px;
           line-height: 24px;
           padding-top: 18%;
-          padding-left: 11%;
+          padding-left: 8%;
 }}
 
 @media  (min-width: 1024px) {
@@ -74,14 +74,14 @@
             font-style: normal;
             font-weight: 700;
             font-size: 56px;
-            padding-left: 44.5%;
+            padding-left: 45%;
             
          }
 }
 
 
 .DoctorY {
-    color: #fedc2a;
+            color: #fedc2a;
 }
 
 @media  (min-width: 1024px) {
@@ -96,10 +96,10 @@
 
 @media  (min-width: 1024px) {
 .Drusef {
-          width: 195px;
-          height: 219px;
-          left: 517px;
-          top: 926px;
+            width: 195px;
+            height: 219px;
+            left: 517px;
+            top: 926px;
 
 }
 }
@@ -118,39 +118,39 @@
 
 .Drfatimaa {
 
-    padding-left: 20%;
+            padding-left: 20%;
 
 }
   
 
 .imagesY {
-    display: flex;
-    justify-content: space-around;
+            display: flex;
+            justify-content: space-around;
    
     
 }
 
 
 .buttonA {
-    display: flex;
-    background-image: white;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #516EFF;
-    font-size: 16px;
-    padding: 16px 28px;
-    border: solid 1px;
-    cursor: pointer;
-    margin: auto;
+            display: flex;
+            background-image: white;
+            border-radius: 8px;
+            box-sizing: border-box;
+            color: #516EFF;
+            font-size: 16px;
+            padding: 16px 28px;
+            border: solid 1px;
+            cursor: pointer;
+            margin: auto;
 }
 
 
 
 
 .ButtonAY {
-    padding-right: 100%;
-    height: 100vh;
-    width: 100vh;
+            padding-right: 100%;
+            height: 100vh;
+            width: 100vh;
 }
 
 
@@ -166,61 +166,61 @@
 }
 
 .Harvard {
-    text-align: center;
-    width: 248px;
-    height: 24px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #777777;
+            text-align: center;
+            width: 248px;
+            height: 24px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #777777;
 }
 
 .center_text{
-              text-align: center;
+            text-align: center;
 }
 
 .Seemore {
-    background-color: #1E96C8;
-    color: white;
-    cursor: pointer;
-    width: 163px;
-    height: 56px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    text-align: center;
-    border: none;
-    transition: 0.2s;
-    top: 80%;
+            background-color: #1E96C8;
+            color: white;
+            cursor: pointer;
+            width: 163px;
+            height: 56px;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            transition: 0.2s;
+            top: 80%;
 }
 .Seemore:hover{
-    background-color: rgb(251, 242, 139);
-    color: black;
-    border: #fedc2a solid 2px;
-    scale: 1.050;
-    font-size: 19px;
+            background-color: rgb(251, 242, 139);
+            color: black;
+            border: #fedc2a solid 2px;
+            scale: 1.050;
+            font-size: 19px;
 }
 
 .Seemoree {
-    transition: 0.3s;
+            transition: 0.3s;
 }
 .Seemoree:hover {
-    color: black;
-    background-color: rgb(251, 242, 139);
-    border: #fedc2a solid 2px;
-    scale: 1.050;
+            color: black;
+            background-color: rgb(251, 242, 139);
+            border: #fedc2a solid 2px;
+            scale: 1.050;
 }
 
 @media  (min-width: 1024px) {
 
 .sida {
-    position: absolute;
-    padding-top: 27.5%; 
-    margin-left: 15%;
-}
+            position: absolute;
+            padding-top: 27.5%; 
+            margin-left: 15%;
+}       
 }
 
 
