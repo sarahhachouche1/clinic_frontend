@@ -7,6 +7,8 @@ import img1 from "../../images/01.png";
 import img2 from "../../images/02.png";
 import img3 from "../../images/03.png";
 import who from "../../images/who.png";
+import { BorderedImage } from "./BorderedImage";
+import { BorderedText } from "./BorderedText";
 
 export const Home = () => {
   return (
@@ -163,7 +165,7 @@ export const Home = () => {
           <button className="another-button">Make an Appointment</button>
         </div>
       </section>
-      <section className="home-third">
+      <section className="home-extra">
         <div>
           <h1 className="bigger-text">
             WHO <span className="yellow">ARE WE</span>
@@ -177,88 +179,35 @@ export const Home = () => {
         </div>
       </section>
       <section className="sixth">
-        <div>
-          <div className="boxy"></div>
-          <div className="who1">
-            <img src={who} alt="who" />
-          </div>
-        </div>
-        <div className="six-two">
-          <div className="bluele">
-            <h1 className="less-bigger" id="black">
-              Our history
-            </h1>
-            <p>
-              Dentics is a well-known name in dental and oral care in New York.
-              <br />
-              The journey of this institution started in 1990 under the hands of
-              <br />
-              Dr. Jonathon Doe, Gold Medalist of Harvard University. Dentics{" "}
-              <br />
-              dental center has been leading the way in dental treatment in
-              <br />
-              USA for more than 30 years in keeping with the evolution of time
-              <br />
-              and the modernization of the era.
-            </p>
-          </div>
-        </div>
-        <div className="six-two">
-          <div className="bluele">
-            <h1 className="less-bigger" id="black">
-              Our history
-            </h1>
-            <p>
-              Dentics is a well-known name in dental and oral care in New York.
-              <br />
-              The journey of this institution started in 1990 under the hands of
-              <br />
-              Dr. Jonathon Doe, Gold Medalist of Harvard University. Dentics{" "}
-              <br />
-              dental center has been leading the way in dental treatment in
-              <br />
-              USA for more than 30 years in keeping with the evolution of time
-              <br />
-              and the modernization of the era.
-            </p>
-          </div>
-        </div>
-        <div  className="six-four">
-          <div>
-            <div className="boxy"></div>
-            <div className="who1">
-              <img src={who} alt="who" />
-            </div>
-          </div>
-        </div>
-        <div>
-          <div className="boxy"></div>
-          <div className="who1">
-            <img src={who} alt="who" />
-          </div>
-        </div>
-        <div className="six-two">
-          <div className="bluele">
-            <h1 className="less-bigger" id="black">
-              Our history
-            </h1>
-            <p>
-              Dentics is a well-known name in dental and oral care in New York.
-              <br />
-              The journey of this institution started in 1990 under the hands of
-              <br />
-              Dr. Jonathon Doe, Gold Medalist of Harvard University. Dentics{" "}
-              <br />
-              dental center has been leading the way in dental treatment in
-              <br />
-              USA for more than 30 years in keeping with the evolution of time
-              <br />
-              and the modernization of the era.
-            </p>
-          </div>
-        </div>
+        <BorderedImage image={who} id={1} />
+        <BorderedText title="Our history" id={1}>
+          Dentics is a well-known name in dental and oral care in New York. The
+          journey of this institution started in 1990 under the hands of Dr.
+          Jonathon Doe, Gold Medalist of Harvard University. Dentics dental
+          center has been leading the way in dental treatment in USA for more
+          than 30 years in keeping with the evolution of time and the
+          modernization of the era.
+        </BorderedText>
+        <BorderedText title="Our history" id={2}>
+          Dentics is a well-known name in dental and oral care in New York. The
+          journey of this institution started in 1990 under the hands of Dr.
+          Jonathon Doe, Gold Medalist of Harvard University. Dentics dental
+          center has been leading the way in dental treatment in USA for more
+          than 30 years in keeping with the evolution of time and the
+          modernization of the era.
+        </BorderedText>
+        <BorderedImage image={who} id={2} />
+        <BorderedImage image={who} id={3} />
+        <BorderedText title="Our history" id={3}>
+          Dentics is a well-known name in dental and oral care in New York. The
+          journey of this institution started in 1990 under the hands of Dr.
+          Jonathon Doe, Gold Medalist of Harvard University. Dentics dental
+          center has been leading the way in dental treatment in USA for more
+          than 30 years in keeping with the evolution of time and the
+          modernization of the era.
+        </BorderedText>
       </section>
-      <section className="seventh">
+      <section className="home-seven">
         <div className="half">
           <p>
             <span className="less-bigger" id="blue">
@@ -271,7 +220,6 @@ export const Home = () => {
           </p>
         </div>
       </section>
-
       <section className="appointement-section"></section>
     </div>
   );

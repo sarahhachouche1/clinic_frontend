@@ -95,7 +95,7 @@ header .nav-btn {
     width: 100vw;
     align-items: center;
     color: #ffffff;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     gap: 1.5rem;
     background-color: #516eff;
     transition: 1s;
@@ -103,16 +103,15 @@ header .nav-btn {
     flex-direction: column;
     align-self: center;
     padding: 0;
-
   }
-  .nav-open li{
+  .nav-open li {
     list-style-type: none;
     transition: 1s;
   }
-  .left{
-    display: none;
+  .left {
+    margin: 0;
   }
-  .nav-closed li{
+  .nav-closed li {
     transition: 1s;
     display: none;
   }
@@ -121,10 +120,10 @@ header .nav-btn {
     padding-right: 50px;
     top: -3px;
   }
-  .logoheader{
+  .logoheader {
     width: 100px;
   }
-  
+
   /* header .resposive-nav{
     transform: none;
     } */

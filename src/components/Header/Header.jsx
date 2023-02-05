@@ -40,7 +40,7 @@ export const Header = () => {
           </a>
         </li>
         <li className="left">
-          <button className="primary-button">Appointment</button>
+          <button className={openMenu ? "secondary-button":"primary-button"}>Appointment</button>
         </li>
       <button onClick={() => setOpenMenu(!openMenu)} className="nav-btn nav-close-btn">
         {openMenu ? <FaTimes />: <FaBars />}

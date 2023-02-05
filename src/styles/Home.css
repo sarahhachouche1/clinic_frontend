@@ -7,7 +7,7 @@
 .home-third,
 .home-fourth,
 .sixth,
-.seventh {
+.home-seven {
   margin-top: 60px;
   display: flex;
   justify-content: space-between;
@@ -46,9 +46,6 @@
   color: #18181b;
 }
 
-#black {
-  color: black;
-}
 #blue {
   color: #516eff;
 }
@@ -107,21 +104,13 @@
   padding: 50px 50px;
   color: white;
 }
-
-.sixth {
-  display: grid;
-  grid-template:
-    "a b" auto
-    "c d" auto
-    "e f" auto;
-  grid-template-columns: 50%;
-  column-gap: 2%;
-  row-gap: 50px;
+.home-extra {
+  display: flex;
+  padding-left: 0;
+  padding-right: 10%;
+  justify-content: space-around;
 }
 
-.six-four {
-  
-}
 
 .less-bigger {
   font-size: 36px;
@@ -140,7 +129,6 @@
 }
 
 .line-spaces {
-
   font-size: 30px;
   line-height: 30px;
   padding-bottom: 20px;
@@ -154,75 +142,64 @@
   margin: 0;
 }
 
-table {
-  width: 100%;
-  align-items: center;
-  margin: auto;
-}
-
-.boxy {
-  width: 122px;
-  height: 308px;
-  background-color: #516eff;
-  border-radius: 12px;
-  /* margin-left: 115px;
-  margin-top: 80px; */
-  position: absolute;
-}
-
-/* .boxy {
-  width: 122px;
-  height: 308px;
-  background-color: #516eff;
-  border-radius: 12px;
-  margin-left: 115px;
-  margin-top: 80px;
-  position: absolute;
-} */
-
-.middle-border{
+.middle-border {
   line-height: 30px;
   font-size: 20px;
 }
-.bluele {
-  background-color: #f8fafc;
-  padding-top: 23px;
-  align-self: center;
-  border-radius: 16px;
-}
-.who1 {
-  position: relative;
-  padding-top: 20px;
-  padding-left: 20px;
-  border-radius: 16px;
-}
 
-/* .who1 {
-  position: relative;
-  margin-top: 103px;
-  margin-left: 145px;
-  border-radius: 16px;
-} */
-
-.who1 img {
-  background-color: #f8fafc;
-  border-radius: 16px;
+/* Section 6 */
+.sixth {
+  margin-top: 0;
+  padding-top: 0;
+  display: grid;
+  grid-template:
+    "a b" auto
+    "c d" auto
+    "e f" auto;
+  grid-template-columns: 50%;
+  column-gap: 2%;
+  row-gap: 50px;
 }
 
-.six-two {
+.bordered-image #border {
+  width: 120px;
+  height: 288px;
   background-color: #516eff;
+  border-radius: 12px;
+  position: absolute;
+}
+
+.bordered-image #image {
+  position: relative;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 16px;
+  background-color: #f8fafc;
+  width: 420px;
+}
+
+#bordered-image-2 div {
+  float: right;
+}
+
+.bordered-text {
+  background-color: #f8fafc;
   border: 1px solid rgba(82, 82, 91, 0.1);
   border-radius: 16px;
-  height: 342px;
-  width: 634px;
   line-height: 34px;
   color: #777777;
   font-family: "Inter";
   text-align: center;
-  padding-left: 20px;
-  padding-right: 0px;
-  border: 0px;
+  align-self: center;
+  padding: 0 20px;
 }
+
+.bordered-text #title {
+  font-size: 36px;
+  color: black;
+}
+
+/* */
 
 .half {
   display: flex;
@@ -246,8 +223,9 @@ table {
   .home-second,
   .home-third,
   .home-fourth,
+  .home-extra,
   .sixth,
-  .seventh {
+  .home-seven {
     display: flex;
     align-self: center;
     flex-direction: column;
@@ -267,49 +245,81 @@ table {
     justify-content: space-evenly;
     width: 100%;
   }
-  .think, .hold-Dr{
+  .think,
+  .hold-Dr {
     display: flex;
     justify-content: center;
   }
 
-  .thinkdr, .holding-Dr{
-    width: 60%;
+  .thinkdr,
+  .holding-Dr {
+    width: 70%;
     margin-top: 50px;
     align-self: center;
   }
- .line-spaces{
+  .line-spaces {
     padding-bottom: 5px;
     font-size: 20px;
   }
-  .home-second{
+  .home-second {
     row-gap: 0;
   }
-  .pre{
+  .pre {
     text-align: center;
   }
-  .home-second ul{
+  .home-second ul {
     padding-left: 0;
     align-items: center;
   }
-  .home-third  div:nth-child(2){
+  .home-third div:nth-child(2) {
     display: none;
   }
-  .home-fourth{
+  .home-fourth {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     row-gap: 30px;
   }
-  .fourth{
+  .fourth {
     border-radius: 16px;
     width: 85%;
   }
-  .home-third-one div:nth-child(1){
+  .home-third-one div:nth-child(1) {
     width: 100%;
     text-align: center;
   }
 
+  /* Section 6 */
+  .bordered-image #image {
+    width: 65vw;
+    margin-top: 3vw;
+    margin-left: 3vw;
+  }
+
+  .bordered-image #border {
+    width: 20%;
+    height: 40vw;
+  }
+
+  #bordered-image-1 {
+    order: 1;
+  }
+  #bordered-text-1 {
+    order: 2;
+  }
+  #bordered-image-2 {
+    order: 3;
+  }
+  #bordered-text-2 {
+    order: 4;
+  }
+  #bordered-image-3 {
+    order: 5;
+  }
+  #bordered-text-3 {
+    order: 6;
+  }
 }
 
 /* div >.half >.less-bigger{
