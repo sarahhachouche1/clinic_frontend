@@ -1,0 +1,44 @@
+/* .Reviews_Header_img { */
+    /* display: flex;
+    justify-content: flex-end;
+    flex-direction: column; */
+    
+
+    
+/* } */
+
+
+.reviews-page {
+    background-color: #516eff;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.Hone_Reviews {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* margin-top: 20px; */
+    background-color: white;
+    top:60%;
+    /* padding-left: 40%; */
+    /* position: inherit; */
+    text-align: center;
+    
+    
+}
+
+
+
+
+.Recent_Blue {
+
+  color: #516eff;
+  font-weight: bolder;
+}
+
+.Big_Font_Reviews {
+
+    font-size: 35px;
+
+}
