@@ -30,6 +30,10 @@
   padding-bottom: 50px;
 }
 
+.home-seven {
+  flex-direction: column;
+}
+
 .home-first-one {
   display: flex;
   flex-direction: column;
@@ -111,7 +115,6 @@
   justify-content: space-around;
 }
 
-
 .less-bigger {
   font-size: 36px;
 }
@@ -145,6 +148,16 @@
 .middle-border {
   line-height: 30px;
   font-size: 20px;
+}
+
+.home-third-one {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  border-bottom: 1px solid #bcbcbc;
+}
+.home-fourth {
+  padding-bottom: 80px;
 }
 
 /* Section 6 */
@@ -194,29 +207,15 @@
   padding: 0 20px;
 }
 
+.home-seven {
+  text-align: center;
+}
 .bordered-text #title {
   font-size: 36px;
   color: black;
 }
 
 /* */
-
-.half {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-self: center;
-  line-height: 80px;
-}
-.home-third-one {
-  display: flex;
-  justify-content: space-between;
-  width: 90%;
-  border-bottom: 1px solid #bcbcbc;
-}
-.home-fourth {
-  padding-bottom: 80px;
-}
 
 @media only screen and (max-width: 1024px) {
   .home-first,

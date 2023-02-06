@@ -12,7 +12,6 @@ export const Header = () => {
       <a href="/">
         <img src={logo} alt="logo" className="logoheader" />
       </a>
-      <hr1 />
       <ul className={`${openMenu === true ? "nav-open" : "nav-closed"}`}>
         <li className="animate">
           <a href="/" className={path === "/" ? "current" : ""}>

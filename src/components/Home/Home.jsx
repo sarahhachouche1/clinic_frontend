@@ -9,6 +9,7 @@ import img3 from "../../images/03.png";
 import who from "../../images/who.png";
 import { BorderedImage } from "./BorderedImage";
 import { BorderedText } from "./BorderedText";
+import { HomeReviews } from "./HomeReviews";
 
 export const Home = () => {
   return (
@@ -208,17 +209,16 @@ export const Home = () => {
         </BorderedText>
       </section>
       <section className="home-seven">
-        <div className="half">
+        <div>
           <p>
-            <span className="less-bigger" id="blue">
-              TESTIMONIALS
-            </span>
+            <span className="less-bigger">TESTIMONIALS</span>
             <br />
             <span className="bigger-text">
               What <span className="yellow">Others</span> Are Saying
             </span>
           </p>
         </div>
+        <HomeReviews />
       </section>
       <section className="appointement-section"></section>
     </div>
