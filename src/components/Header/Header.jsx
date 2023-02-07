@@ -1,9 +1,21 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
 import "../../styles/Header.css";
+import { useLogout } from '../../hooks/useLogout'
+import "./navbar.css"
+import { useAuthContext } from "../../hooks/useAuthContext";
+import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
 const path =window.location.pathname;
+const nav= useNavigate();
+    const { user } = useAuthContext()
+    const { logout } = useLogout()
+    const handleClick = () => {
+      logout()
+      nav("/");
+}
   return (
     <header>
       <a href="/"><img src={logo} alt="logo" className="logoheader"/></a>
@@ -26,8 +38,19 @@ const path =window.location.pathname;
         </li>
         <li><button className="button">Appointment</button></li>
       </ul>
-
-   
+      {user && (
+            <div className="logout">
+              <button onClick={handleClick}>Log out</button>
+              <Link to="/dashboard">dashboard</Link>
+            </div>
+            
+          )}
+          {!user && (
+            <div>
+              <Link to="/login">Login</Link>
+              
+            </div>
+          )}
     </header>
     
   );
