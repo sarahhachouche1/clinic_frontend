@@ -6,7 +6,9 @@ import { FaBars, FaTimes } from "react-icons/fa";
 export const Header = () => {
   const path = window.location.pathname;
   const [openMenu, setOpenMenu] = useState(false);
-
+  const goToBottom=()=> {
+    window.scrollTo(0,document.body.scrollHeight);
+ }
   return (
     <header>
       <a href="/">
@@ -39,11 +41,14 @@ export const Header = () => {
           </a>
         </li>
         <li className="left">
-          <button className={openMenu ? "secondary-button":"primary-button"}>Appointment</button>
+          <button onClick={goToBottom} className= {openMenu ? "secondary-button":"primary-button"} >Appointment</button>
         </li>
-      <button onClick={() => setOpenMenu(!openMenu)} className="nav-btn nav-close-btn">
-        {openMenu ? <FaTimes />: <FaBars />}
-      </button>
+        <button
+          onClick={() => setOpenMenu(!openMenu)}
+          className="nav-btn nav-close-btn"
+        >
+          {openMenu ? <FaTimes /> : <FaBars />}
+        </button>
       </ul>
     </header>
   );

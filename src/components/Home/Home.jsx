@@ -10,8 +10,10 @@ import who from "../../images/who.png";
 import { BorderedImage } from "./BorderedImage";
 import { BorderedText } from "./BorderedText";
 import { HomeReviews } from "./HomeReviews";
+import { Appointmnet } from "./Appointmnet";
 
 export const Home = () => {
+
   return (
     <div className="home-page">
       <section className="home-first">
@@ -220,7 +222,9 @@ export const Home = () => {
         </div>
         <HomeReviews />
       </section>
-      <section className="appointement-section"></section>
+      <section className="appointement-section">
+        <Appointmnet/>
+      </section>
     </div>
   );
 };
