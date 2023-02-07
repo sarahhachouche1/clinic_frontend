@@ -1,7 +1,12 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
 import "../../styles/Header.css";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { useLogout } from '../../hooks/useLogout'
+import "./navbar.css"
+import { useAuthContext } from "../../hooks/useAuthContext";
+import { useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const path = window.location.pathname;
@@ -9,6 +14,13 @@ export const Header = () => {
   const goToBottom=()=> {
     window.scrollTo(0,document.body.scrollHeight);
  }
+const nav= useNavigate();
+    const { user } = useAuthContext()
+    const { logout } = useLogout()
+    const handleClick = () => {
+      logout()
+      nav("/");
+}
   return (
     <header>
       <a href="/">
@@ -50,6 +62,19 @@ export const Header = () => {
           {openMenu ? <FaTimes /> : <FaBars />}
         </button>
       </ul>
+      {user && (
+            <div className="logout">
+              <button onClick={handleClick}>Log out</button>
+              <Link to="/dashboard">dashboard</Link>
+            </div>
+            
+          )}
+          {!user && (
+            <div>
+              <Link to="/login">Login</Link>
+              
+            </div>
+          )}
     </header>
   );
 };

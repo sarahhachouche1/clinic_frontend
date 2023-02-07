@@ -1,4 +1,6 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
 import "../../styles/Home.css";
 import thinkdr from "../../images/thinkdr.png";
 import holdDR from "../../images/holdDR.png";
