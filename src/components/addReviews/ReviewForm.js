@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState} from "react"
 import { useReviewsContext } from "../../hooks/useReviewsContext"
 import { useAuthContext } from "../../hooks/useAuthContext"
 import axios from "axios"
@@ -12,13 +12,6 @@ const ReviewForm = () => {
     const [logo, setLogo] = useState('')
     const [error, setError] = useState(null)
     const[added,setAdded]=useState(null)
-    const [show, setShow] = useState(false);
-    useEffect(() => {
-      setShow(true);
-      setTimeout(() => {
-        setShow(false);
-      },  60000);
-    }, []);
     const handleSubmit = async (e) => {
       e.preventDefault()
     
@@ -92,7 +85,7 @@ const ReviewForm = () => {
   
         <button>Add Workout</button>
         {error && <div className="error">{error}</div>}
-        {added && <div className="valid"  style={{ display: show ? 'block' : 'none' }}>{added}</div>}
+        {added && <div className="valid">{added}</div>}
       </form>
     )
   }
