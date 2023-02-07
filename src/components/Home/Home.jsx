@@ -10,7 +10,7 @@ import who from "../../images/who.png";
 import { BorderedImage } from "./BorderedImage";
 import { BorderedText } from "./BorderedText";
 import { HomeReviews } from "./HomeReviews";
-import { Appointmnet } from "./Appointmnet";
+import { Appointment } from "./Appointment";
 
 export const Home = () => {
 
@@ -223,7 +223,7 @@ export const Home = () => {
         <HomeReviews />
       </section>
       <section className="appointement-section">
-        <Appointmnet/>
+        <Appointment/>
       </section>
     </div>
   );
