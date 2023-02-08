@@ -1,6 +1,5 @@
 import { useReviewsContext } from '../../hooks/useReviewsContext'
 import { useAuthContext } from '../../hooks/useAuthContext'
-import formatDistanceToNow from 'date-fns/formatDistanceToNow'
 
 
 const ReviewDetails = ({ review }) => {

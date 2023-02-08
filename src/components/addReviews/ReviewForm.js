@@ -2,7 +2,6 @@ import { useState} from "react"
 import { useReviewsContext } from "../../hooks/useReviewsContext"
 import { useAuthContext } from "../../hooks/useAuthContext"
 import axios from "axios"
-import { useNavigate } from "react-router-dom";
 
 const ReviewForm = () => {
     const { user } = useAuthContext()

@@ -1,6 +1,5 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-
+import React, { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import "../../styles/Home.css";
 import thinkdr from "../../images/thinkdr.png";
 import holdDR from "../../images/holdDR.png";
@@ -15,6 +14,19 @@ import { HomeReviews } from "./HomeReviews";
 import { Appointment } from "./Appointment";
 
 export const Home = () => {
+  const nav = useNavigate();
+  const { state } = useLocation();
+  const { targetId } = state || {};
+
+  useEffect(() => {
+    if (targetId) {
+      const element = document.getElementById(targetId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+        nav("/", { state: { targetId: undefined } });
+      }
+    }
+  }, [targetId, nav]);
 
   return (
     <div className="home-page">
@@ -224,8 +236,8 @@ export const Home = () => {
         </div>
         <HomeReviews />
       </section>
-      <section className="appointement-section">
-        <Appointment/>
+      <section className="appointment-section" id="appointment">
+        <Appointment />
       </section>
     </div>
   );
