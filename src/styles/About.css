@@ -1,226 +1,229 @@
-.about-page {
-                border:1px solid black;
-                width: 20px;
-                height:20px;
+/* page flex direct column */
+.about {
+    display: flex;
+    flex-direction: column;
 }
 
-.DentistryY {
-                color: #fedc2a;
+/* top segment row in desktop */
+.top {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 100px;
+    background-repeat: no-repeat;
+    background-position-x: 75%;
+    background-position-y: 380%;
+    /* background-size: contain; */
+    justify-content: space-between;
 }
 
-
-@media (min-width : 1024px) {
-.H1YY  {
-         position: absolute;
-         font-family: 'Inter'; 
-         font-style: normal; 
-         font-weight: 700; 
-         font-size: 90px; 
-         padding-top: 4%;
-         padding-left: 8%;
-} 
-}
-
-@media (min-width : 1024px) {
-
-    .PY {
-          position: absolute;
-          width: 450px;
-          height: 121px;
-          font-family: 'Inter';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 22px;
-          line-height: 24px;
-          padding-top: 18%;
-          padding-left: 8%;
-}}
-
-@media  (min-width: 1024px) {
-    .imgY {
-            position: absolute;
-            width: 680.84px;
-            height: 298.76px;
-            /* right: 204.88px; */
-            /* top: 400.58px;  */
-            /* padding-right: 80%; */
-            padding-left: 45%;
-            padding-top: 15%;
-            z-index: -4;
-      }
-}
+/* .intro { */
+    /* min-width: 350px; */
+    /* top:; */
 
 
-@media  (min-width: 1024px) {
+/* } */
 
-.imgRy {
-    
-         position: absolute;
-         width: 335px;
-         height: 319px;
-         padding-left: 75%;
-         padding-top: 6%;
-
-       
+/* center the heading */
+.heading {
+    text-align: center;
+    background-color: rgb(240, 240, 240);
+    padding-top: 20px;
+    padding-bottom: 50px;
+    margin-top: 0;
+    /* background-size: contain; */
 
 }
-}
 
-@media  (min-width: 1024px) {
-
-    .pBY {
-            padding-top: 29.8%;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 56px;
-            padding-left: 45%;
-            
-         }
-}
-
-
-.DoctorY {
-            color: #fedc2a;
-}
-
-@media  (min-width: 1024px) {
-.Drmahdi {
-            width: 195px;
-            height: 219px;
-            left: 230px;
-            top: 926px;
-    
-}
-}
-
-@media  (min-width: 1024px) {
-.Drusef {
-            width: 195px;
-            height: 219px;
-            left: 517px;
-            top: 926px;
-
-}
-}
-
-@media  (min-width: 1024px) {
-.Drsarah {
-
-            width: 100%;
-            height: 219px;
-            left: 805px;
-            top: 926px;
-}
-}
-
-
-
-.Drfatimaa {
-
-            padding-left: 20%;
-
-}
-  
-
+/* images segment row in desktop */
 .imagesY {
-            display: flex;
-            justify-content: space-around;
-   
-    
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: row;    
+    justify-content: space-between;
+}
+
+
+/* tablets and smaller */
+@media (max-width: 920px) {
+    /* put top in column in smaller screens, and less padding */
+    .top {
+        flex-direction: column;
+        padding: 50px 20px;
+        background-size: cover;
+        background-position-x: 5px;
+        background-position-y: 5px;
+    }
+    .DoctorY {
+        color: #fedc2a;
+}
+
+    .DentistryY {
+        color: #fedc2a;
+}
+
+    /* this dude is only allowed to take up 100% of the screen wdith, not MORE than that */
+    /* .imgY {
+         width: 100%;
+       
+         
+    } */
+
+    /* put images in column in smaller screens */
+    .imagesY {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Add some spacec between the dr cards */
+    .doctor-card {
+        margin: 50px 0;
+    }
+
+    .buttonA {
+        display: flex;
+        background-image: white;
+        border-radius: 8px;
+        box-sizing: border-box;
+        color: #516EFF;
+        font-size: 16px;
+        padding: 16px 28px;
+        border: solid 1px;
+        cursor: pointer;
+        margin: auto;
+        white-space: nowrap;
+    }
+
+    .Seemore:hover{
+        background-color: rgb(251, 242, 139);
+        color: black;
+        border: #fedc2a solid 2px;
+        scale: 1.050;
+        font-size: 19px;
+    }
+    .Seemoree:hover {
+    color: black;
+    background-color: rgb(251, 242, 139);
+    border: #fedc2a solid 2px;
+    scale: 1.050;
+}
+.sida {
+    /* position: absolute; */
+    padding-top: 26%; 
+    margin-left: 25%;
+    margin-top: 28%;
+}  
+
+.PY {
+    /* position: absolute; */
+    /* width: 700px; */
+    /* height: 121px; */
+    font-family: 'Inter';
+    font-style: normal;
+    /* font-weight: 400; */
+    font-size: 22px;
+    line-height: 24px;
+    /* padding-top: 8px; */
+    padding-left: 8%;
+    margin: auto;
+}
+
 }
 
 
 .buttonA {
-            display: flex;
-            background-image: white;
-            border-radius: 8px;
-            box-sizing: border-box;
-            color: #516EFF;
-            font-size: 16px;
-            padding: 16px 28px;
-            border: solid 1px;
-            cursor: pointer;
-            margin: auto;
+    display: flex;
+    background-image: white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #516EFF;
+    font-size: 16px;
+    padding: 16px 28px;
+    border: solid 1px;
+    cursor: pointer;
+    margin: auto;
+    white-space: nowrap;
+}
+
+.center_text {
+
+    text-align: center;
+}
+
+.Seemore:hover{
+    background-color: rgb(251, 242, 139);
+    color: black;
+    border: #fedc2a solid 2px;
+    scale: 1.050;
+    font-size: 19px;
 }
 
 
-
-
-.ButtonAY {
-            padding-right: 100%;
-            height: 100vh;
-            width: 100vh;
+.Seemoree:hover {
+    color: black;
+    background-color: rgb(251, 242, 139);
+    border: #fedc2a solid 2px;
+    scale: 1.050;
 }
 
-
-.pdrname {
-            width: 248px;
-            height: 34px;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 34px;
-            text-align: center;
-}
-
-.Harvard {
-            text-align: center;
-            width: 248px;
-            height: 24px;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 24px;
-            color: #777777;
-}
-
-.center_text{
-            text-align: center;
-}
 
 .Seemore {
-            background-color: #1E96C8;
-            color: white;
-            cursor: pointer;
-            width: 163px;
-            height: 56px;
-            font-family: 'Inter';
-            font-style: normal;
-            font-weight: 600;
-            font-size: 18px;
-            text-align: center;
-            border: none;
-            transition: 0.2s;
-            top: 80%;
-}
-.Seemore:hover{
-            background-color: rgb(251, 242, 139);
-            color: black;
-            border: #fedc2a solid 2px;
-            scale: 1.050;
-            font-size: 19px;
+    background-color: #1E96C8;
+    color: white;
+    cursor: pointer;
+    width: 163px;
+    height: 56px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    border: none;
+    transition: 0.2s;
+    top: 80%;
+    
 }
 
-.Seemoree {
-            transition: 0.3s;
-}
-.Seemoree:hover {
-            color: black;
-            background-color: rgb(251, 242, 139);
-            border: #fedc2a solid 2px;
-            scale: 1.050;
+
+.PY {
+    /* position: absolute; */
+    width: 450px;
+    height: 121px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 24px;
+    /* padding-top: 8px; */
+    padding-left: 8%;
+    margin: auto;
 }
 
-@media  (min-width: 1024px) {
+.H1YY  {
+   padding-left: 8%;
+} 
 
 .sida {
-            position: absolute;
-            padding-top: 27.5%; 
-            margin-left: 15%;
-}       
+    /* position: absolute; */
+    padding-top: 26%; 
+    margin-left: 25%;
+    margin-top: 28%;
+}  
+
+.DentistryY {
+    color: #fedc2a;
 }
 
 
+
+
+.pBY {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    
+ }
+
+ .DoctorY {
+    color: #fedc2a;
+}

@@ -5,8 +5,7 @@ header {
   width: 100%;
   height: 120px;
   justify-content: space-between;
-  align-items: center;
-  position: sticky;
+  align-items: center;  
   background-color: rgb(188, 172, 172);
   opacity: 0.9;
   top: 0;
@@ -23,6 +22,7 @@ header ul {
 }
 
 header a {
+  display: block;
   text-decoration: none;
   letter-spacing: 2px;
   padding: 16px 28px;
@@ -41,4 +41,21 @@ header a:active{
 .logo {
   width: 150px;
   position: relative;
+}
+
+/* tablets and smaller */
+@media (max-width: 920px) {
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  header ul {
+    flex-direction: column;
+  }
+
+  button {
+    margin-top: 20px;
+  }
 }
