@@ -1,123 +1,120 @@
 /* page flex direct column */
 .about {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 /* top segment row in desktop */
 .top {
-    display: flex;
-    flex-direction: row;
-    padding: 50px 100px;
-    background-repeat: no-repeat;
-    background-position-x: 75%;
-    background-position-y: 380%;
-    /* background-size: contain; */
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  padding: 50px 100px;
+  background-repeat: no-repeat;
+  background-position-x: 75%;
+  background-position-y: 380%;
+  /* background-size: contain; */
+  justify-content: space-between;
 }
 
 /* .intro { */
-    /* min-width: 350px; */
-    /* top:; */
-
+/* min-width: 350px; */
+/* top:; */
 
 /* } */
 
 /* center the heading */
 .heading {
-    text-align: center;
-    background-color: rgb(240, 240, 240);
-    padding-top: 20px;
-    padding-bottom: 50px;
-    margin-top: 0;
-    /* background-size: contain; */
-
+  text-align: center;
+  background-color: rgb(240, 240, 240);
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-top: 0;
+  /* background-size: contain; */
 }
 
 /* images segment row in desktop */
 .imagesY {
-    padding: 50px 100px;
-    display: flex;
-    flex-direction: row;    
-    justify-content: space-between;
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
 
 /* tablets and smaller */
 @media (max-width: 920px) {
-    /* put top in column in smaller screens, and less padding */
-    .top {
-        flex-direction: column;
-        padding: 50px 20px;
-        background-size: cover;
-        background-position-x: 5px;
-        background-position-y: 5px;
-    }
-    .DoctorY {
-        color: #fedc2a;
-}
+  /* put top in column in smaller screens, and less padding */
+  .top {
+    flex-direction: column;
+    padding: 50px 20px;
+    background-size: cover;
+    background-position-x: 5px;
+    background-position-y: 5px;
+  }
+  .DoctorY {
+    color: #fedc2a;
+  }
 
-    .DentistryY {
-        color: #fedc2a;
-}
+  .DentistryY {
+    color: #fedc2a;
+  }
 
-    /* this dude is only allowed to take up 100% of the screen wdith, not MORE than that */
-    /* .imgY {
+  /* this dude is only allowed to take up 100% of the screen wdith, not MORE than that */
+  /* .imgY {
          width: 100%;
        
          
     } */
 
-    /* put images in column in smaller screens */
-    .imagesY {
-        flex-direction: column;
-        align-items: center;
-    }
+  /* put images in column in smaller screens */
+  .imagesY {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    /* Add some spacec between the dr cards */
-    .doctor-card {
-        margin: 50px 0;
-    }
+  /* Add some spacec between the dr cards */
+  .doctor-card {
+    margin: 50px 0;
+  }
 
-    .buttonA {
-        display: flex;
-        background-image: white;
-        border-radius: 8px;
-        box-sizing: border-box;
-        color: #516EFF;
-        font-size: 16px;
-        padding: 16px 28px;
-        border: solid 1px;
-        cursor: pointer;
-        margin: auto;
-        white-space: nowrap;
-    }
+  .buttonA {
+    display: flex;
+    background-image: white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #516eff;
+    font-size: 16px;
+    padding: 16px 28px;
+    border: solid 1px;
+    cursor: pointer;
+    margin: auto;
+    white-space: nowrap;
+  }
 
-    .Seemore:hover{
-        background-color: rgb(251, 242, 139);
-        color: black;
-        border: #fedc2a solid 2px;
-        scale: 1.050;
-        font-size: 19px;
-    }
-    .Seemoree:hover {
+  .Seemore:hover {
+    background-color: rgb(251, 242, 139);
+    color: black;
+    border: #fedc2a solid 2px;
+    scale: 1.05;
+    font-size: 19px;
+  }
+  .Seemoree:hover {
     color: black;
     background-color: rgb(251, 242, 139);
     border: #fedc2a solid 2px;
-    scale: 1.050;
-}
-.sida {
+    scale: 1.05;
+  }
+  .sida {
     /* position: absolute; */
-    padding-top: 26%; 
+    padding-top: 26%;
     margin-left: 25%;
     margin-top: 28%;
-}  
+  }
 
-.PY {
+  .PY {
     /* position: absolute; */
     /* width: 700px; */
     /* height: 121px; */
-    font-family: 'Inter';
+    font-family: "Inter";
     font-style: normal;
     /* font-weight: 400; */
     font-size: 22px;
@@ -125,105 +122,94 @@
     /* padding-top: 8px; */
     padding-left: 8%;
     margin: auto;
+  }
 }
-
-}
-
 
 .buttonA {
-    display: flex;
-    background-image: white;
-    border-radius: 8px;
-    box-sizing: border-box;
-    color: #516EFF;
-    font-size: 16px;
-    padding: 16px 28px;
-    border: solid 1px;
-    cursor: pointer;
-    margin: auto;
-    white-space: nowrap;
+  display: flex;
+  background-image: white;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #516eff;
+  font-size: 16px;
+  padding: 16px 28px;
+  border: solid 1px;
+  cursor: pointer;
+  margin: auto;
+  white-space: nowrap;
 }
 
 .center_text {
-
-    text-align: center;
+  text-align: center;
 }
 
-.Seemore:hover{
-    background-color: rgb(251, 242, 139);
-    color: black;
-    border: #fedc2a solid 2px;
-    scale: 1.050;
-    font-size: 19px;
+.Seemore:hover {
+  background-color: rgb(251, 242, 139);
+  color: black;
+  border: #fedc2a solid 2px;
+  scale: 1.05;
+  font-size: 19px;
 }
-
 
 .Seemoree:hover {
-    color: black;
-    background-color: rgb(251, 242, 139);
-    border: #fedc2a solid 2px;
-    scale: 1.050;
+  color: black;
+  background-color: rgb(251, 242, 139);
+  border: #fedc2a solid 2px;
+  scale: 1.05;
 }
-
 
 .Seemore {
-    background-color: #1E96C8;
-    color: white;
-    cursor: pointer;
-    width: 163px;
-    height: 56px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
-    text-align: center;
-    border: none;
-    transition: 0.2s;
-    top: 80%;
-    
+  background-color: #1e96c8;
+  color: white;
+  cursor: pointer;
+  width: 163px;
+  height: 56px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  transition: 0.2s;
+  top: 80%;
 }
-
 
 .PY {
-    /* position: absolute; */
-    width: 450px;
-    height: 121px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 24px;
-    /* padding-top: 8px; */
-    padding-left: 8%;
-    margin: auto;
+  /* position: absolute; */
+  width: 450px;
+  height: 121px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 24px;
+  /* padding-top: 8px; */
+  padding-left: 8%;
+  margin: auto;
 }
 
-.H1YY  {
-   padding-left: 8%;
-} 
+.H1YY {
+  padding-left: 8%;
+}
 
 .sida {
-    /* position: absolute; */
-    padding-top: 26%; 
-    margin-left: 25%;
-    margin-top: 28%;
-}  
-
-.DentistryY {
-    color: #fedc2a;
+  /* position: absolute; */
+  padding-top: 26%;
+  margin-left: 25%;
+  margin-top: 28%;
 }
 
-
-
+.DentistryY {
+  color: #fedc2a;
+}
 
 .pBY {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 56px;
-    
- }
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+}
 
- .DoctorY {
-    color: #fedc2a;
+.DoctorY {
+  color: #fedc2a;
 }

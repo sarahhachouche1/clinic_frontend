@@ -1,33 +1,41 @@
+.review-review {
+  display: flex;
+  justify-content: space-evenly;
+}
 
-
+.comp-review {
+  display: grid;
+  grid-template:
+    "a b c" auto
+    "d e f" auto;
+  row-gap: 20px;
+  column-gap: 40px;
+  align-self: center;
+  margin-bottom: 30px;
+}
 
 .reviews-page {
-    background-color: #516eff;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
+  background-color: #516eff;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .Hone_Reviews {
-    background-color: white;
-    text-align: center;
-    
-    
+  background-color: white;
+  text-align: center;
 }
 
-
 .Recent_Blue {
-
   color: #516eff;
   font-weight: bolder;
 }
 
 .Big_Font_Reviews {
-    font-size: 35px;
+  font-size: 35px;
 }
-
 
 .review-card {
   display: flex;
@@ -41,8 +49,8 @@
   height: 200px;
 }
 
-.review-content{
-  flex:1;
+.review-content {
+  flex: 1;
 }
 
 .review-logo {
@@ -59,19 +67,22 @@
   color: #777777;
 }
 
-#review-4{
+#review-4 {
   height: 250px;
 }
 
+.reviews-title h1 {
+  text-align: center;
+}
 
 @media only screen and (max-width: 1024px) {
-.review-card{
-  width:80vw;
-  align-self: center;
-  margin: 25px 25px;
-}
-.review-logo {
-  width: 30vw;
-}
-}
+  .review-card {
+    width: 80vw;
+    align-self: center;
+    margin: 25px 25px;
+  }
 
+  .review-logo {
+    width: 30vw;
+  }
+}

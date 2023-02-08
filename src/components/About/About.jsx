@@ -6,7 +6,7 @@ import Drmahdi from "../../images/Drmahdi.png"
 import Drusef from "../../images/Drusef.png"
 import Drsarah from "../../images/Drsarah.png"
 import Drfatima from "../../images/Drfatima.png"
-import { Buttonappt } from '../Buttons/Buttonappt'
+// import { Buttonappt } from '../Buttons/Buttonappt'
 
 
 const About = () => {
