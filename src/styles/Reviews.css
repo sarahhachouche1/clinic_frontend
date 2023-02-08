@@ -1,5 +1,34 @@
 
 
+
+.reviews-page {
+    background-color: #516eff;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Hone_Reviews {
+    background-color: white;
+    text-align: center;
+    
+    
+}
+
+
+.Recent_Blue {
+
+  color: #516eff;
+  font-weight: bolder;
+}
+
+.Big_Font_Reviews {
+    font-size: 35px;
+}
+
+
 .review-card {
   display: flex;
   flex-direction: row;
@@ -44,5 +73,5 @@
 .review-logo {
   width: 30vw;
 }
-
 }
+

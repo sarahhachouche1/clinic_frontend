@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 import { Header } from "./components/Header/Header.jsx";
 import { Home } from "./components/Home/Home";
-import { About } from "./components/About/About";
+import  About  from "./components/About/About";
 import { Services } from "./components/Services/Services";
 import { Reviews } from "./components/Reviews/Reviews";
 import { Contact } from "./components/Contact/Contact";
