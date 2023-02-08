@@ -1,0 +1,48 @@
+
+
+.review-card {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  background-color: #f8fafc;
+  padding: 20px 20px;
+  border: 1px solid rgba(82, 82, 91, 0.1);
+  border-radius: 16px;
+  width: 20vw;
+  height: 200px;
+}
+
+.review-content{
+  flex:1;
+}
+
+.review-logo {
+  width: 7vw;
+  height: 100px;
+}
+
+.review-name {
+  height: 30px;
+}
+
+.review-message {
+  overflow: hidden;
+  color: #777777;
+}
+
+#review-4{
+  height: 250px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+.review-card{
+  width:80vw;
+  align-self: center;
+  margin: 25px 25px;
+}
+.review-logo {
+  width: 30vw;
+}
+
+}

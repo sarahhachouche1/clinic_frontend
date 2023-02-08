@@ -1,4 +1,4 @@
-import "../index.css"
+import "../styles/Login.css";
 import { useState } from "react"
 import { useLogin } from '../hooks/useLogin'
 const Login = () => {
@@ -12,7 +12,7 @@ const Login = () => {
   }
 
   return (
-    < div className='body'>
+    < div className='login-page'>
      <form className="login" onSubmit={handleSubmit}>
       <h3>Log In</h3>
       <label className="label">Email:</label>

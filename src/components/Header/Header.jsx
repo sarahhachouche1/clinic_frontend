@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../images/logo.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { useLogout } from "../../hooks/useLogout";
 import { useAuthContext } from "../../hooks/useAuthContext";
-import { useNavigate } from "react-router-dom";
 import "../../styles/Header.css";
 
 export const Header = () => {
@@ -14,6 +13,7 @@ export const Header = () => {
   const { user } = useAuthContext();
   const { logout } = useLogout();
   const handleClick = () => {
+    setOpenMenu(false);
     logout();
     nav("/");
   };
@@ -24,55 +24,101 @@ export const Header = () => {
       </a>
       <ul className={`${openMenu === true ? "nav-open" : "nav-closed"}`}>
         <li className="animate">
-          <a href="/" className={path === "/" ? "current" : ""}>
+          <Link
+            to="/"
+            className={path === "/" ? "current" : ""}
+            onClick={() => setOpenMenu(false)}
+          >
             Home
-          </a>
+          </Link>
         </li>
         <li className="animate">
-          <a href="/about" className={path === "/about" ? "current" : ""}>
+          <Link
+            to="/about"
+            className={path === "/about" ? "current" : ""}
+            onClick={() => setOpenMenu(false)}
+          >
             About
-          </a>
+          </Link>
         </li>
         <li className="animate">
-          <a href="/services" className={path === "/services" ? "current" : ""}>
+          <Link
+            to="/services"
+            className={path === "/services" ? "current" : ""}
+            onClick={() => setOpenMenu(false)}
+          >
             Services
-          </a>
+          </Link>
         </li>
         <li className="animate">
-          <a href="/reviews" className={path === "/reviews" ? "current" : ""}>
+          <Link
+            to="/reviews"
+            className={path === "/reviews" ? "current" : ""}
+            onClick={() => setOpenMenu(false)}
+          >
             Reviews
-          </a>
+          </Link>
         </li>
         <li className="animate">
-          <a href="/contact" className={path === "/contact" ? "current" : ""}>
+          <Link
+            to="/contact"
+            className={path === "/contact" ? "current" : ""}
+            onClick={() => setOpenMenu(false)}
+          >
             Contact
-          </a>
+          </Link>
         </li>
+        {user && (
+          <li>
+            <Link
+              to="/dashboard"
+              className={path === "/dashboard" ? "current" : ""}
+              onClick={() => setOpenMenu(false)}
+            >
+              Dashboard
+            </Link>
+          </li>
+        )}
         <li className="left">
           <button
-            onClick={() => nav("/", { state: { targetId: "appointment" } })}
+            onClick={() => {
+              setOpenMenu(false);
+              nav("/", { state: { targetId: "appointment" } });
+            }}
             className={openMenu ? "secondary-button" : "primary-button"}
           >
             Appointment
           </button>
         </li>
+        {user && (
+          <li className="left">
+            <button onClick={handleClick} className="secondary-button">
+              Logout
+            </button>
+          </li>
+        )}
+        {!user && (
+          <li className="left">
+            <div>
+              <button
+                onClick={() => {
+                  setOpenMenu(false);
+                  nav("/login");
+                }}
+                className="secondary-button"
+              >
+                Login
+              </button>
+            </div>
+          </li>
+        )}
+
         <button
           onClick={() => setOpenMenu(!openMenu)}
           className="nav-btn nav-close-btn"
         >
           {openMenu ? <FaTimes /> : <FaBars />}
         </button>
-        {user && (
-          <div className="logout">
-            <button onClick={handleClick}>Log out</button>
-            <Link to="/dashboard">dashboard</Link>
-          </div>
-        )}
-        {!user && (
-          <div>
-            <Link to="/login">Login</Link>
-          </div>
-        )}
       </ul>
     </header>
   );

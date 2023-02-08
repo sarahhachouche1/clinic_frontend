@@ -92,14 +92,14 @@ header .nav-btn {
     top: 0;
     left: 0;
     margin: 0;
-    height: 60vh;
+    height: 80vh;
     width: 100vw;
     align-items: center;
     color: #ffffff;
     justify-content: space-evenly;
     gap: 1.5rem;
     background-color: #516eff;
-    transition: 1s;
+    transition: 0.5s;
     transform: translateY(0vh);
     flex-direction: column;
     align-self: center;
@@ -107,13 +107,13 @@ header .nav-btn {
   }
   .nav-open li {
     list-style-type: none;
-    transition: 1s;
+    transition: 0.5s;
   }
   .left {
     margin: 0;
   }
   .nav-closed li {
-    transition: 1s;
+    transition: 0.5s;
     display: none;
   }
   header {
