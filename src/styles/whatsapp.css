@@ -1,0 +1,195 @@
+.phnnmbr{
+    width:100%;
+    margin: auto auto;
+    height:50%;
+display: flex;
+}
+.countrycode{
+    width:90%;
+    margin: 1px 0 0 1px ;
+    height:50%;
+display: flex;
+}
+.countrydev .formcnt{
+    margin: auto auto;
+    height:80%;
+    width:130%;
+    border-radius: 25px;
+    background-color:#CECDCD;
+    font-size: 15px;
+}
+
+
+:root {
+    --ewc-color-1: #ffffff;/*White*/
+    --ewc-color-2: #eae1da;/*Chat background*/
+    --ewc-color-4: #00796a;/*Background name and send*/
+}
+
+.ewChat {
+    position:sticky;
+    bottom: 15px;
+    right: 30px;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 320px;
+    max-width: calc(100% - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 11;
+}
+
+.ewChatBox {
+    width: 100%;
+    background-color: var(--ewc-color-2);
+    border-radius: 15px;
+    display: flex;
+    transition: opacity 1000ms;
+    flex-direction: column;
+}
+
+.ewChatAvatar {
+    left: calc(50% - 32px);
+    top: -80px;
+    width: 59px;
+    height: 59px;
+    padding: 3px;
+    border-radius: 100%;
+    background-color: var(--ewc-color-1);
+    display: flex;
+
+}
+
+.Opinions {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 25px;
+}
+
+.ewChatHeader {
+    background-color: var(--ewc-color-4);
+    color: var(--ewc-color-1);
+    border-radius: 15px 15px 0 0;
+    padding: 5px;/*Green background size*/
+    text-align:center;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.ewChatHeader h2 {
+    font-size: 18px;
+    margin: 3px;
+}
+
+.ewChatHeader p {
+    font-size: 12px;
+    margin: 10px 0 0 130px;
+    width:100px;
+}
+
+.ewChatBubble {
+    background-color: var(--ewc-color-1);
+    margin: 10px 18px 10px 30px;
+    padding: 9px 9px 25px 9px;
+    text-align: left;
+    border-radius: 0 10px 10px 10px;
+    position: relative;
+    transition: opacity 1000ms;
+}
+.wtspbtnlogo{
+width:30px;
+margin:2px 0 0 1px;
+}
+.ewChatBubble:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 0;
+    border: 15px solid transparent;
+    border-right-color: var(--ewc-color-1);
+    border-left: 0;
+    border-top: 0;
+    margin-top: 0;
+    margin-left: -15px;
+}
+
+.ewChatBubble p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.ewChatBubble span {
+    position: absolute;
+    bottom: 5px;
+    right: 9px;
+    opacity: 0.5;
+    font-size: 11px;
+}
+
+.ewChatInput {
+    display: flex;
+    transition: opacity 1000ms;
+    width: 100%;
+    margin-top: 5px;
+    height: 49px;
+    border-radius: 24px;
+}
+#message{
+    width:100%;
+    margin: auto auto;
+    height:50%;
+}
+
+
+
+.ewChatInput button {
+    border: none;
+    background-color:var( --ewc-color-4);
+    border-radius: 50%;
+    margin:2px 0 0 -40px;
+ padding: 5px;
+
+}
+
+.ewChatAvatar img {
+    margin: 2px 15px 5px 9px;/*To move the avatar*/
+}
+
+.Profiledate h2{
+text-align: left;
+    width:200px;
+    margin:10px 0 0 0px;
+}
+img.dentalogo{
+    width:70px;
+    height:50px;
+    margin: 3px  0 0 -5px;;
+}
+.whatwidget{
+    bottom: 15px;
+    right: 15px;
+    border-radius: 50px;
+width:50px;
+height: 50px;
+margin:10% 0 0 10%;
+
+border:1px solid;
+cursor: pointer;
+}
+.whatswidget{
+    position: fixed;
+    bottom: 210px;
+    right: 15px;
+    border-radius: 25px 30px 5px 25px;
+    box-shadow: 1px 2px 5px 2px rgba(59, 139, 5, 0.3);
+    transition:all 0.3s ease-out;
+    width:50px;
+}
+.whatswidget:hover{
+    width:70px;
+}
