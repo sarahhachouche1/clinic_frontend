@@ -45,6 +45,7 @@
   padding: 20px 20px;
   border: 1px solid rgba(82, 82, 91, 0.1);
   border-radius: 16px;
+  font-size: 20px;
   width: 20vw;
   height: 200px;
 }
@@ -75,7 +76,25 @@
   text-align: center;
 }
 
+.Reviews_Header_img{
+  height: 30vh;
+  width: auto;
+}
+
+.reviews-page button{
+ margin: auto;
+ margin-bottom: 30px;
+}
+
+
 @media only screen and (max-width: 1024px) {
+  .Reviews_Header_img, .reviews-page button{
+    display: none;
+  }
+  .comp-review{
+    display: flex;
+    flex-direction: column;
+  }
   .review-card {
     width: 80vw;
     align-self: center;
@@ -85,4 +104,5 @@
   .review-logo {
     width: 30vw;
   }
+
 }

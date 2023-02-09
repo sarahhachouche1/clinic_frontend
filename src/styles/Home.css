@@ -288,6 +288,12 @@
   height: 240px;
 }
 
+.arrow-visible {
+  background-color: #f8fafc;
+  border: 0;
+  height: 300px;
+}
+
 .hidden {
   visibility: hidden;
 }
@@ -411,6 +417,7 @@
   /* Appointment section*/
   .form-input {
     width: 80%;
+    margin:auto;
   }
   .first-data,
   .flex,
@@ -428,7 +435,6 @@
   }
   .flex {
     flex-direction: column;
-    margin: 0;
     padding: 0;
   }
 

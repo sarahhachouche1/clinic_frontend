@@ -1,7 +1,6 @@
 import React from "react";
 import "../../styles/Reviews.css";
 import ReviewsHeader from "../../images/ReviewsHeader.png";
-import { Button } from "../Buttons/Button";
 import { ReviewComp } from "./ReviewComp";
 
 
@@ -14,7 +13,7 @@ export const Reviews = () => {
           src={ReviewsHeader}
           alt="ReviewsHeader"
         />
-        <Button />
+        <button className="Seemore">See More</button>
       </div>
       <div className="reviews-title">
         <h2 className="Hone_Reviews">

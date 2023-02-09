@@ -16,7 +16,7 @@ const About = () => {
         <div className='top' style={{ backgroundImage: `url(${Vector204})`}}>
           <div className='intro'>
             <h1 className='H1YY'>Passion for <span className='DentistryY'>Dentistry</span> <br />Since 2015 </h1>
-            <p className='PY'>DENTI Clinic was established in 1977, when Professor Hani Khoury returned to Lebanon from France, after finishing his specialty in gum and bone disease, also known as “Periodontics”.</p>
+            <div  className='PY'><p>DENTI Clinic was established in 1977, when Professor Hani Khoury returned to Lebanon from France, after finishing his specialty in gum and bone disease, also known as “Periodontics”.</p></div>
             <span className='sida'><button className="Seemore">See More</button></span>
           </div>
           <div>
