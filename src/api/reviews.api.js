@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const domain = "http://localhost:8000";
+const domain = "https://clinic-qpx2.onrender.com";
 
 export const getReviews = async () => await axios.get(`${domain}/reviews/read`);
 
